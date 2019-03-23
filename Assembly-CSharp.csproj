@@ -63,6 +63,10 @@
   <ItemGroup>
     <Compile Include="Assets\MFramework\Example\1.CopyText\CommonUtilExample.cs" />
     <Compile Include="Assets\MFramework\Example\10.FrameworkExample\FrameworkExample.cs" />
+    <Compile Include="Assets\MFramework\Example\11.MainManager\Game\GameModule.cs" />
+    <Compile Include="Assets\MFramework\Example\11.MainManager\Home\HomeModule.cs" />
+    <Compile Include="Assets\MFramework\Example\12.GUIManager\GUIExample.cs" />
+    <Compile Include="Assets\MFramework\Example\13.AudioManager\AudioExample.cs" />
     <Compile Include="Assets\MFramework\Example\2.MenuItemResume\EditorUtilExample.cs" />
     <Compile Include="Assets\MFramework\Example\3.ResolutionCheck\ResolutionCheckExample.cs" />
     <Compile Include="Assets\MFramework\Example\4.TransformSimplify\TransformSimplifyExample.cs" />
@@ -71,6 +75,9 @@
     <Compile Include="Assets\MFramework\Example\7.Hide\HideExample.cs" />
     <Compile Include="Assets\MFramework\Example\8.DepayWithCoroutine\DelayWithCoroutine.cs" />
     <Compile Include="Assets\MFramework\Example\9.MsgDispather\MsgDispatcherExample.cs" />
+    <Compile Include="Assets\MFramework\Framework\Manager\AudioManager.cs" />
+    <Compile Include="Assets\MFramework\Framework\Manager\GUIManager.cs" />
+    <Compile Include="Assets\MFramework\Framework\Manager\MainManager.cs" />
     <Compile Include="Assets\MFramework\Framework\MonoBehaviourSimplify.cs" />
     <Compile Include="Assets\MFramework\Framework\Util\CommonUtil.cs" />
     <Compile Include="Assets\MFramework\Framework\Util\EditorUtil.cs" />
