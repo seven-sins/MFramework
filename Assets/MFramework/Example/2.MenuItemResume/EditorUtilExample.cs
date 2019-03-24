@@ -9,7 +9,7 @@ namespace MFramework
 #endif
         private static void MenuClicked()
         {
-            EditorUtil.CallMenuItem("MFramework/Example/1.要复制的文本");
+            // EditorUtil.CallMenuItem("MFramework/Example/1.要复制的文本");
         }
 
     }

@@ -1,0 +1,18 @@
+ManifestFileVersion: 0
+CRC: 2103505148
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: cd0bc9311980942407399697c825f32b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 27295f96fcdc2b917bd061e8817c7e02
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+Assets:
+- Assets/MFramework/Example/24.AssetBundleExample/GameObject.prefab
+Dependencies: []

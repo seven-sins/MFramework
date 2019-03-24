@@ -10,7 +10,7 @@ namespace MFramework
 #endif
         static void MenuClicked()
         {
-            UnityEditor.EditorApplication.isPlaying = true;
+            // UnityEditor.EditorApplication.isPlaying = true;
         }
 
 

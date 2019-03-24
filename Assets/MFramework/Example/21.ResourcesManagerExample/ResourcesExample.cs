@@ -3,22 +3,22 @@ using UnityEngine;
 
 namespace MFramework
 {
-    public class ResourcesManagerExample : MonoBehaviour
+    public class ResourcesExample : MonoBehaviour
     {
 #if UNITY_EDITOR
-        [UnityEditor.MenuItem("MFramework/Example/21.ResourcesManagerExample", false, 21)]
+        [UnityEditor.MenuItem("MFramework/Example/21.ResourcesExample", false, 21)]
 #endif
         static void MenuClicked()
         {
-            UnityEditor.EditorApplication.isPlaying = true;
+            // UnityEditor.EditorApplication.isPlaying = true;
             new GameObject("ResourcesManagerExample").AddComponent<ResourcesManagerExample>();
         }
 
-        ResourceLoader resLoader = new ResourceLoader();
+        ResLoader resLoader = new ResLoader();
 
         void Start()
         {
-            resLoader.LoadAsset<AudioClip>("yu");
+            resLoader.LoadSync<AudioClip>("yu");
         }
 
         private void OnDestroy()

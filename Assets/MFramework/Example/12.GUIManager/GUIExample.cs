@@ -15,7 +15,7 @@ namespace Game
 #endif
         private static void MenuClicked()
         {
-            UnityEditor.EditorApplication.isPlaying = true;
+            // UnityEditor.EditorApplication.isPlaying = true;
             new GameObject("GUIExample").AddComponent<GUIExample>();
         }
         void Start()

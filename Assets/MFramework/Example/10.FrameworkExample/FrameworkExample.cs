@@ -10,7 +10,7 @@ namespace MFramework
 #endif
         private static void MenuClicked()
         {
-            UnityEditor.EditorApplication.isPlaying = true;
+            // UnityEditor.EditorApplication.isPlaying = true;
             new GameObject("MsgReceiverObj").AddComponent<FrameworkExample>();
         }
         private void Awake()
