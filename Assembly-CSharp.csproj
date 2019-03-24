@@ -67,6 +67,10 @@
     <Compile Include="Assets\MFramework\Example\11.MainManager\Home\HomeModule.cs" />
     <Compile Include="Assets\MFramework\Example\12.GUIManager\GUIExample.cs" />
     <Compile Include="Assets\MFramework\Example\13.AudioManager\AudioExample.cs" />
+    <Compile Include="Assets\MFramework\Example\14.PoolManager\PoolExample.cs" />
+    <Compile Include="Assets\MFramework\Example\15.LevelManager\LevelExample.cs" />
+    <Compile Include="Assets\MFramework\Example\16.SingletomExample\SingletonExample.cs" />
+    <Compile Include="Assets\MFramework\Example\17.MonoSingletonExample\MonoSingletonExample.cs" />
     <Compile Include="Assets\MFramework\Example\2.MenuItemResume\EditorUtilExample.cs" />
     <Compile Include="Assets\MFramework\Example\3.ResolutionCheck\ResolutionCheckExample.cs" />
     <Compile Include="Assets\MFramework\Example\4.TransformSimplify\TransformSimplifyExample.cs" />
@@ -77,6 +81,7 @@
     <Compile Include="Assets\MFramework\Example\9.MsgDispather\MsgDispatcherExample.cs" />
     <Compile Include="Assets\MFramework\Framework\Manager\AudioManager.cs" />
     <Compile Include="Assets\MFramework\Framework\Manager\GUIManager.cs" />
+    <Compile Include="Assets\MFramework\Framework\Manager\LevelManager.cs" />
     <Compile Include="Assets\MFramework\Framework\Manager\MainManager.cs" />
     <Compile Include="Assets\MFramework\Framework\MonoBehaviourSimplify.cs" />
     <Compile Include="Assets\MFramework\Framework\Util\CommonUtil.cs" />
@@ -84,8 +89,11 @@
     <Compile Include="Assets\MFramework\Framework\Util\GameObjectSimplify.cs" />
     <Compile Include="Assets\MFramework\Framework\Util\Hide.cs" />
     <Compile Include="Assets\MFramework\Framework\Util\MathUtil.cs" />
+    <Compile Include="Assets\MFramework\Framework\Util\MonoSingleton.cs" />
     <Compile Include="Assets\MFramework\Framework\Util\MsgDispatcher.cs" />
     <Compile Include="Assets\MFramework\Framework\Util\ResolutionCheck.cs" />
+    <Compile Include="Assets\MFramework\Framework\Util\SimpleObjectPool.cs" />
+    <Compile Include="Assets\MFramework\Framework\Util\Singleton.cs" />
     <Compile Include="Assets\MFramework\Framework\Util\TransformSimplify.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>E:/Unity_Projects/MFrmework/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>

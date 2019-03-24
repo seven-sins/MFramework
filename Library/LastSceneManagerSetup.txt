@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/MFramework/Example/13.AudioManager/AudioScene.unity
+- path: Assets/MFramework/Example/17.MonoSingletonExample/Singleton.unity
   isLoaded: 1
   isActive: 1
