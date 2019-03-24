@@ -10,7 +10,7 @@ namespace MFramework
 
         private void Awake()
         {
-            Hide();
+            this.Hide();
         }
 
 

@@ -11,9 +11,9 @@ namespace MFramework
         private static void MenuClicked()
         {
             GameObject gameObject = new GameObject();
-            GameObjectSimplify.Hide(gameObject);
+            gameObject.Hide();
 
-            GameObjectSimplify.Show(gameObject.transform);
+            gameObject.transform.Show();
         }
     }
 

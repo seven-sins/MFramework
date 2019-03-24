@@ -11,19 +11,19 @@ namespace MFramework
         private static void MenuClicked()
         {
             GameObject gameObject = new GameObject();
-            TransformSimplify.SetLocalPositionX(gameObject.transform, 5.0f);
+            gameObject.transform.SetLocalPositionX(5.0f);
 
-            TransformSimplify.SetLocalPositionY(gameObject.transform, 5.0f);
+            gameObject.transform.SetLocalPositionY(5.0f);
 
-            TransformSimplify.SetLocalPositionZ(gameObject.transform, 5.0f);
+            gameObject.transform.SetLocalPositionZ(5.0f);
 
-            var transform = new GameObject("transform").transform;
-            TransformSimplify.Identity(transform);
+            Transform transform = new GameObject("transform").transform;
+            gameObject.transform.Identity();
             //
-            var parentTrans = new GameObject("ParentTransform").transform;
-            var childTrans = new GameObject("ChildTransform").transform;
+            Transform parentTrans = new GameObject("ParentTransform").transform;
+            Transform childTrans = new GameObject("ChildTransform").transform;
 
-            TransformSimplify.AddChild(parentTrans, childTrans);
+            gameObject.transform.AddChild(childTrans);
         }
     }
 

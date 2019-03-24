@@ -16,13 +16,14 @@ namespace MFramework
 
         protected override void OnBeforeDestroy()
         {
+
         }
 
         void Start()
         {
             Delay(5.0f, () => {
                 Debug.Log("5s后执行");
-                Hide();
+                this.Hide();
             });
         }
     }

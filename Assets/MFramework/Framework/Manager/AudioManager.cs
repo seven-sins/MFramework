@@ -2,25 +2,15 @@
 
 namespace MFramework
 {
-    public class AudioManager : MonoBehaviour
+    public class AudioManager : MonoSingleton<AudioManager>
     {
-        private static AudioManager mInstance;
-
-        public static AudioManager Instance
-        {
-            get
-            {
-                if (!mInstance)
-                {
-                    mInstance = new GameObject("AudioManager").AddComponent<AudioManager>();
-                }
-                return mInstance;
-            }
-        }
-
         private AudioListener mAudioListener;
         private void CheckAudioListener()
         {
+            if (!mAudioListener)
+            {
+                mAudioListener = FindObjectOfType<AudioListener>();
+            }
             if (!mAudioListener)
             {
                 mAudioListener = gameObject.AddComponent<AudioListener>();

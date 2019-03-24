@@ -7,33 +7,6 @@ namespace MFramework
 {
     public abstract class MonoBehaviourSimplify : MonoBehaviour
     {
-        #region GameObjectSimplify
-        /// <summary>
-        /// 显示
-        /// </summary>
-        public void Show()
-        {
-            GameObjectSimplify.Show(gameObject);
-        }
-        /// <summary>
-        /// 隐藏
-        /// </summary>
-        public void Hide()
-        {
-            GameObjectSimplify.Hide(gameObject);
-        }
-        #endregion
-
-        #region TransformSimplify
-        /// <summary>
-        /// 重置
-        /// </summary>
-        public void Identity()
-        {
-            TransformSimplify.Identity(transform);
-        }
-        #endregion
-
         #region Delay
         public void Delay(float seconds, Action onFinished)
         {
