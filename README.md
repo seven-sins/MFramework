@@ -66,9 +66,9 @@
               Debug.Log("singleton Example ctor");
           }
   
-  		#if UNITY_EDITOR
+  #if UNITY_EDITOR
           [UnityEditor.MenuItem("MFramework/Example/16.SingletonExample", false, 16)]
-  		#endif
+  #endif
           static void MenuClicked() {
               var instance = SingletonExample.Instance;
   
