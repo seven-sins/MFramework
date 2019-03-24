@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/MFramework/Example/17.MonoSingletonExample/Singleton.unity
+- path: Assets/MFramework/Example/20.UnloadPrefab/UnloadPrefab.unity
   isLoaded: 1
   isActive: 1
