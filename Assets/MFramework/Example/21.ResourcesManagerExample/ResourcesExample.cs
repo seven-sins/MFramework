@@ -18,12 +18,12 @@ namespace MFramework
 
         void Start()
         {
-            resLoader.LoadSync<AudioClip>("yu");
+            resLoader.LoadSync<AudioClip>("resources://yu");
         }
 
         private void OnDestroy()
         {
-            resLoader.ReleaseAsset();
+            resLoader.Release();
         }
     }
 

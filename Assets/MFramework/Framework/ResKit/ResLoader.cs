@@ -37,7 +37,16 @@ namespace MFramework
 
         private Res CreateRes(string assetName)
         {
-            Res res = new Res(assetName);
+            Res res = null;
+            if (assetName.StartsWith("resources://"))
+            {
+                res = new ResourcesRes(assetName);
+            }
+            else
+            {
+                res = new AssetBundleRes(assetName);
+            }
+
             ResManager.Instance.SharedLoadedRes.Add(res);
             this.AddRes2Record(res);
             return res;
@@ -101,7 +110,7 @@ namespace MFramework
             });
         }
 
-        public void ReleaseAsset()
+        public void Release()
         {
             mResRecords.ForEach(loadedAsset => { loadedAsset.Release(); });
             mResRecords.Clear();

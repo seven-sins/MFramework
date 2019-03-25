@@ -26,7 +26,7 @@ namespace MFramework
         private IEnumerator Start()
         {
             yield return new WaitForSeconds(2.0f);
-            mResLoader.LoadAsync<AudioClip>("yu", coinClip =>
+            mResLoader.LoadAsync<AudioClip>("resources://yu", coinClip =>
             {
                 Debug.Log(coinClip.name);
             });

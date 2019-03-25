@@ -93,9 +93,11 @@
     <Compile Include="Assets\MFramework\Framework\Manager\LevelManager.cs" />
     <Compile Include="Assets\MFramework\Framework\Manager\MainManager.cs" />
     <Compile Include="Assets\MFramework\Framework\MonoBehaviourSimplify.cs" />
+    <Compile Include="Assets\MFramework\Framework\ResKit\AssetBundleRes.cs" />
     <Compile Include="Assets\MFramework\Framework\ResKit\Res.cs" />
     <Compile Include="Assets\MFramework\Framework\ResKit\ResLoader.cs" />
     <Compile Include="Assets\MFramework\Framework\ResKit\ResManager.cs" />
+    <Compile Include="Assets\MFramework\Framework\ResKit\ResourcesRes.cs" />
     <Compile Include="Assets\MFramework\Framework\Util\CommonUtil.cs" />
     <Compile Include="Assets\MFramework\Framework\Util\EditorUtil.cs" />
     <Compile Include="Assets\MFramework\Framework\Util\Hide.cs" />
@@ -108,6 +110,9 @@
     <Compile Include="Assets\MFramework\Framework\Util\Singleton.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>E:/Unity_Projects/MFrmework/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>E:/Unity_Projects/MFrmework/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
       <HintPath>E:/Unity_Projects/MFrmework/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>

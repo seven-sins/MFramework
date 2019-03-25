@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="MFramework.CommonUtilExample" Collapsed="true">
+    <Position X="25.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\MFramework\Example\1.CopyText\CommonUtilExample.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MFramework.FrameworkExample" Collapsed="true">
+    <Position X="1.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAEAAAAAAAAAgAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\MFramework\Example\10.FrameworkExample\FrameworkExample.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MFramework.AudioExample" Collapsed="true">
+    <Position X="3.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAEAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\MFramework\Example\13.AudioManager\AudioExample.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MFramework.PoolExample" Collapsed="true">
+    <Position X="27" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\MFramework\Example\14.PoolManager\PoolExample.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MFramework.LevelExample" Collapsed="true">
+    <Position X="8" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAEAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\MFramework\Example\15.LevelManager\LevelExample.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MFramework.SingletonExample" Collapsed="true">
+    <Position X="6.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\MFramework\Example\16.SingletomExample\SingletonExample.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MFramework.MonoSingletonExample" Collapsed="true">
+    <Position X="19.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\MFramework\Example\17.MonoSingletonExample\MonoSingletonExample.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MFramework.StaticThisExtensionExample" Collapsed="true">
+    <Position X="28.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Assets\MFramework\Example\18.StaticThisExtension\StaticThisExtensionExample.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MFramework.UnloadResourcesExample" Collapsed="true">
+    <Position X="25.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\MFramework\Example\19.UnloadResources\UnloadResourcesExample.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MFramework.EditorUtilExample" Collapsed="true">
+    <Position X="30.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\MFramework\Example\2.MenuItemResume\EditorUtilExample.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MFramework.UnloadPrefabExample" Collapsed="true">
+    <Position X="23.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\MFramework\Example\20.UnloadPrefab\UnloadPrefabExample.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MFramework.ResourcesExample" Collapsed="true">
+    <Position X="23.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAACAAAAAAAAAAAAAAAgAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\MFramework\Example\21.ResourcesManagerExample\ResourcesExample.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MFramework.SimpleRCExample" Collapsed="true">
+    <Position X="27" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\MFramework\Example\22.SimpleRCExample\SimpleRCExample.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MFramework.ResourcesManagerExample" Collapsed="true">
+    <Position X="25.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAgAAAAgAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\MFramework\Example\23.ResourcesManagerExample\ResourcesManagerExample.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MFramework.AssetBundleExample" Collapsed="true">
+    <Position X="21.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\MFramework\Example\24.AssetBundleExample\AssetBundleExample.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MFramework.ResolutionCheckExample" Collapsed="true">
+    <Position X="21.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\MFramework\Example\3.ResolutionCheck\ResolutionCheckExample.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MFramework.TransformSimplifyExample" Collapsed="true">
+    <Position X="21.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\MFramework\Example\4.TransformSimplify\TransformSimplifyExample.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MFramework.MathUtilExample" Collapsed="true">
+    <Position X="21.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\MFramework\Example\5.MathUtil\MathUtilExample.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MFramework.GameObjectSimplifyExample" Collapsed="true">
+    <Position X="23.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\MFramework\Example\6.GameObjectSimplify\GameObjectSimplifyExample.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MFramework.HideExample" Collapsed="true">
+    <Position X="27" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\MFramework\Example\7.Hide\HideExample.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MFramework.DelayWithCoroutine" Collapsed="true">
+    <Position X="10.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAEAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\MFramework\Example\8.DepayWithCoroutine\DelayWithCoroutine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MFramework.MsgDispatcherExample" Collapsed="true">
+    <Position X="25.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Assets\MFramework\Example\9.MsgDispather\MsgDispatcherExample.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MFramework.GameObjectExtension" Collapsed="true">
+    <Position X="21.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\MFramework\Framework\Extension\GameObjectExtension.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MFramework.TransformExtension" Collapsed="true">
+    <Position X="30.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAEAAAAAAAAAAAAAAAIAAAAEAAAABAAAA=</HashCode>
+      <FileName>Assets\MFramework\Framework\Extension\TransformExtension.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MFramework.AudioManager" Collapsed="true">
+    <Position X="14.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABEEAACAAAAAAACEAAAA0AAAAAAAAIAAAAAAAAQQA=</HashCode>
+      <FileName>Assets\MFramework\Framework\Manager\AudioManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MFramework.GUIManager" Collapsed="true">
+    <Position X="25.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAACAAAAAAAAAAAAAAgAAAAAAAAAMAAAAAAAEA=</HashCode>
+      <FileName>Assets\MFramework\Framework\Manager\GUIManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MFramework.LevelManager" Collapsed="true">
+    <Position X="28.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAIAAAAAAAAAECACAAAAA=</HashCode>
+      <FileName>Assets\MFramework\Framework\Manager\LevelManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MFramework.MainManager" Collapsed="true">
+    <Position X="2.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAIAAKAAAAAAAAAAICAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Assets\MFramework\Framework\Manager\MainManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MFramework.MonoBehaviourSimplify" Collapsed="true">
+    <Position X="10.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAEQAAAAAAAEJAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Assets\MFramework\Framework\MonoBehaviourSimplify.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MFramework.Res" Collapsed="true">
+    <Position X="1.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAgAAAAAAAIAAAAAAQCAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Assets\MFramework\Framework\ResKit\Res.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MFramework.ResLoader" Collapsed="true">
+    <Position X="28.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAEgAAAAAAAqAGAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Assets\MFramework\Framework\ResKit\ResLoader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MFramework.ResManager" Collapsed="true">
+    <Position X="17" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Assets\MFramework\Framework\ResKit\ResManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MFramework.CommonUtil" Collapsed="true">
+    <Position X="23.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\MFramework\Framework\Util\CommonUtil.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MFramework.EditorUtil" Collapsed="true">
+    <Position X="28.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgEAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Assets\MFramework\Framework\Util\EditorUtil.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MFramework.Hide" Collapsed="true">
+    <Position X="12.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\MFramework\Framework\Util\Hide.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MFramework.MathUtil" Collapsed="true">
+    <Position X="30.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Assets\MFramework\Framework\Util\MathUtil.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MFramework.MonoSingleton&lt;T&gt;" Collapsed="true">
+    <Position X="17" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\MFramework\Framework\Util\MonoSingleton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MFramework.MsgDispatcher" Collapsed="true">
+    <Position X="23.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAEAAAAAAAAABAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Assets\MFramework\Framework\Util\MsgDispatcher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MFramework.ResolutionCheck" Collapsed="true">
+    <Position X="30.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAARAAAAAABAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\MFramework\Framework\Util\ResolutionCheck.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MFramework.CustomObjectFactory&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="27" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\MFramework\Framework\Util\SimpleObjectPool.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MFramework.Pool&lt;T&gt;" Collapsed="true">
+    <Position X="4.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIEAAAAAAAAAAAAAAAAAABEAAAAAAABAAAAAAA=</HashCode>
+      <FileName>Assets\MFramework\Framework\Util\SimpleObjectPool.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MFramework.SimpleObjectPool&lt;T&gt;" Collapsed="true">
+    <Position X="4.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\MFramework\Framework\Util\SimpleObjectPool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MFramework.SimpleRC" Collapsed="true">
+    <Position X="1.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAACACAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Assets\MFramework\Framework\Util\SimpleRC.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MFramework.Singleton&lt;T&gt;" Collapsed="true">
+    <Position X="6.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\MFramework\Framework\Util\Singleton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Game.GameModule" Collapsed="true">
+    <Position X="1.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAIAAAAAAAAAAAAAACAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\MFramework\Example\11.MainManager\Game\GameModule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Game.HomeModule" Collapsed="true">
+    <Position X="3.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAIAAAAAAAAAAAAAACAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\MFramework\Example\11.MainManager\Home\HomeModule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Game.GUIExample" Collapsed="true">
+    <Position X="5.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAEAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\MFramework\Example\12.GUIManager\GUIExample.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="MFramework.IPool&lt;T&gt;" Collapsed="true">
+    <Position X="23.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\MFramework\Framework\Util\SimpleObjectPool.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MFramework.IObjectFactory&lt;T&gt;" Collapsed="true">
+    <Position X="21.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\MFramework\Framework\Util\SimpleObjectPool.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MFramework.IRefCounter" Collapsed="true">
+    <Position X="25.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAACAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Assets\MFramework\Framework\Util\SimpleRC.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="MFramework.UILayer" Collapsed="true">
+    <Position X="23.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAACAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\MFramework\Framework\Manager\GUIManager.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MFramework.EnviromentMode" Collapsed="true">
+    <Position X="21.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABBAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Assets\MFramework\Framework\Manager\MainManager.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>
