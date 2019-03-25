@@ -1,5 +1,4 @@
-﻿
-namespace MFramework
+﻿namespace MFramework
 {
     public interface IRefCounter
     {

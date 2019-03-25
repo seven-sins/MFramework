@@ -1,3 +1,11 @@
+### v0.0.12
+
+---
+
+* [ ] 支持AssetBundle中加载的资源
+* [ ] 支持多个AssetBundle平台的Build
+* [ ] AssetBundle依赖的问题处理
+
 ### v0.0.11
 
 ---
