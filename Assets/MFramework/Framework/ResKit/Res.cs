@@ -2,8 +2,15 @@
 
 namespace MFramework
 {
+    public enum ResState
+    {
+        Waiting,
+        Loading,
+        Loaded
+    }
     public abstract class Res : SimpleRC
     {
+        public ResState State { get; protected set; }
         public UnityEngine.Object Asset { get; protected set; }
 
         public string Name { get; protected set; }

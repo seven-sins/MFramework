@@ -5,6 +5,69 @@ namespace MFramework
 {
     public class ResLoader
     {
+        /// <summary>
+        /// 同步加载资源
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="assetName"></param>
+        /// <returns></returns>
+        public T LoadSync<T>(string assetName) where T : UnityEngine.Object
+        {
+            Res res = this.GetOrCreateRes(assetName);
+            if (res != null)
+            {
+                if (res.State == ResState.Loading)
+                {
+                    throw new Exception(string.Format("请不要在异步加载资源{0}时, 同步加载{0}", res.Name));
+                }
+                else if (res.State == ResState.Loaded)
+                {
+                    return res.Asset as T;
+                }
+            }
+
+            res = this.CreateRes(assetName);
+            res.LoadSync();
+
+            return res.Asset as T;
+        }
+        /// <summary>
+        /// 异步加载资源
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="assetName"></param>
+        /// <param name="onLoaded"></param>
+        public void LoadAsync<T>(string assetName, Action<T> onLoaded) where T : UnityEngine.Object
+        {
+            Res res = this.GetOrCreateRes(assetName);
+            if (res != null)
+            {
+                onLoaded(res.Asset as T);
+                switch (res.State)
+                {
+                    case ResState.Loading:
+                        //
+                        break;
+                    case ResState.Loaded:
+                        onLoaded(res.Asset as T);
+                        break;
+                }
+                return;
+            }
+            
+            res = this.CreateRes(assetName);
+            res.LoadAsync(loadedRes =>
+            {
+                onLoaded(loadedRes.Asset as T);
+            });
+        }
+
+        public void Release()
+        {
+            mResRecords.ForEach(loadedAsset => { loadedAsset.Release(); });
+            mResRecords.Clear();
+        }
+
         #region private
         private List<Res> mResRecords = new List<Res>();
         /// <summary>
@@ -68,53 +131,6 @@ namespace MFramework
             return res;
         }
         #endregion
-
-        /// <summary>
-        /// 同步加载资源
-        /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="assetName"></param>
-        /// <returns></returns>
-        public T LoadSync<T>(string assetName) where T : UnityEngine.Object
-        {
-            Res res = this.GetOrCreateRes(assetName);
-            if (res != null)
-            {
-                return res.Asset as T;
-            }
-
-            res = this.CreateRes(assetName);
-            res.LoadSync();
-
-            return res.Asset as T;
-        }
-        /// <summary>
-        /// 异步加载资源
-        /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="assetName"></param>
-        /// <param name="onLoaded"></param>
-        public void LoadAsync<T>(string assetName, Action<T> onLoaded) where T : UnityEngine.Object
-        {
-            Res res = this.GetOrCreateRes(assetName);
-            if (res != null)
-            {
-                onLoaded(res.Asset as T);
-                return;
-            }
-            
-            res = this.CreateRes(assetName);
-            res.LoadAsync(loadedRes =>
-            {
-                onLoaded(loadedRes.Asset as T);
-            });
-        }
-
-        public void Release()
-        {
-            mResRecords.ForEach(loadedAsset => { loadedAsset.Release(); });
-            mResRecords.Clear();
-        }
     }
 
 }

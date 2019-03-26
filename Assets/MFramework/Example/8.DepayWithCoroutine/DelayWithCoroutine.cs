@@ -7,13 +7,12 @@ namespace MFramework
 
 #if UNITY_EDITOR
         [UnityEditor.MenuItem("MFramework/Example/8.定时功能", false, 8)]
-#endif
         private static void MenuClicked()
         {
-            // UnityEditor.EditorApplication.isPlaying = true;
+            UnityEditor.EditorApplication.isPlaying = true;
             new GameObject("Hide").AddComponent<DelayWithCoroutine>();
         }
-
+#endif
         protected override void OnBeforeDestroy()
         {
 

@@ -7,12 +7,12 @@ namespace MFramework
     {
 #if UNITY_EDITOR
         [UnityEditor.MenuItem("MFramework/Example/15.LevelManager", false, 15)]
-#endif
         private static void MenuClicked()
         {
-            // UnityEditor.EditorApplication.isPlaying = true;
+            UnityEditor.EditorApplication.isPlaying = true;
             new GameObject("LevelExample").AddComponent<LevelExample>();
         }
+#endif
         void Start()
         {
             LevelManager.Init(new List<string>

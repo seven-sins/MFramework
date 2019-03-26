@@ -7,12 +7,11 @@ namespace MFramework
 
 #if UNITY_EDITOR
         [UnityEditor.MenuItem("MFramework/Example/17.MonoSingletonExample", false, 17)]
-#endif
         static void MenuClicked()
         {
-            // UnityEditor.EditorApplication.isPlaying = true;
+            UnityEditor.EditorApplication.isPlaying = true;
         }
-
+#endif
 
         [RuntimeInitializeOnLoadMethod]
         static void Example()

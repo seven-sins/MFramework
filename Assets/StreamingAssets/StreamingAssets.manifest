@@ -1,7 +1,11 @@
 ManifestFileVersion: 0
-CRC: 1838263050
+CRC: 3434852502
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
-      Name: gameobject
+      Name: red
+      Dependencies:
+        Dependency_0: square
+    Info_1:
+      Name: square
       Dependencies: {}

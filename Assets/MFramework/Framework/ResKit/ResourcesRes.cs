@@ -11,6 +11,7 @@ namespace MFramework
         {
             mAssetPath = assetPath.Substring("resources://".Length);
             Name = assetPath;
+            State = ResState.Waiting;
         }
         /// <summary>
         /// 同步加载
@@ -18,7 +19,11 @@ namespace MFramework
         /// <returns></returns>
         public override bool LoadSync()
         {
-            return Asset = Resources.Load(mAssetPath);
+            State = ResState.Loading;
+            Asset = Resources.Load(mAssetPath);
+            State = ResState.Loaded;
+
+            return Asset;
         }
         /// <summary>
         /// 异步加载
@@ -26,10 +31,12 @@ namespace MFramework
         /// <param name="onLoaded"></param>
         public override void LoadAsync(Action<Res> onLoaded)
         {
+            State = ResState.Loading;
             ResourceRequest resRequest = Resources.LoadAsync(mAssetPath);
             resRequest.completed += operation =>
             {
                 Asset = resRequest.asset;
+                State = ResState.Loaded;
                 onLoaded(this);
             };
         }

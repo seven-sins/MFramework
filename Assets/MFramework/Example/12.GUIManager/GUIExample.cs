@@ -12,12 +12,12 @@ namespace Game
 
 #if UNITY_EDITOR
         [UnityEditor.MenuItem("MFramework/Example/12.GUIManager", false, 12)]
-#endif
         private static void MenuClicked()
         {
-            // UnityEditor.EditorApplication.isPlaying = true;
+            UnityEditor.EditorApplication.isPlaying = true;
             new GameObject("GUIExample").AddComponent<GUIExample>();
         }
+#endif
         void Start()
         {
             GUIManager.SetResolution(1280, 720, 0);

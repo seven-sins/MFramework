@@ -7,13 +7,12 @@ namespace MFramework
     {
 #if UNITY_EDITOR
         [UnityEditor.MenuItem("MFramework/Example/19.UnloadResourcesExample", false, 19)]
-#endif
         static void MenuClicked()
         {
-            // UnityEditor.EditorApplication.isPlaying = true;
+            UnityEditor.EditorApplication.isPlaying = true;
             new GameObject("UnloadResourcesExample").AddComponent<UnloadResourcesExample>();
         }
-
+#endif
         IEnumerator Start()
         {
             AudioClip audioClip = Resources.Load<AudioClip>("yu");

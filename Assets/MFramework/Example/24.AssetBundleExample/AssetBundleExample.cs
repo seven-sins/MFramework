@@ -29,8 +29,8 @@ namespace MFramework
         private AssetBundle mAssetBundle;
         void Start()
         {
-            mAssetBundle = mResLoader.LoadSync<AssetBundle>(Application.streamingAssetsPath + "/gameobject");
-            GameObject gameObject = mAssetBundle.LoadAsset<GameObject>("GameObject");
+            mAssetBundle = mResLoader.LoadSync<AssetBundle>(Application.streamingAssetsPath + "/red");
+            GameObject gameObject = mAssetBundle.LoadAsset<GameObject>("red");
 
             Instantiate(gameObject);
         }

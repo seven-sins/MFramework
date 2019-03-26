@@ -7,13 +7,12 @@ namespace MFramework
     {
 #if UNITY_EDITOR
         [UnityEditor.MenuItem("MFramework/Example/21.ResourcesExample", false, 21)]
-#endif
         static void MenuClicked()
         {
-            // UnityEditor.EditorApplication.isPlaying = true;
+            UnityEditor.EditorApplication.isPlaying = true;
             new GameObject("ResourcesManagerExample").AddComponent<ResourcesManagerExample>();
         }
-
+#endif
         ResLoader resLoader = new ResLoader();
 
         void Start()

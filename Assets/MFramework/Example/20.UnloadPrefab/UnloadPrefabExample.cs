@@ -7,13 +7,12 @@ namespace MFramework
     {
 #if UNITY_EDITOR
         [UnityEditor.MenuItem("MFramework/Example/20.UnloadPrefabExample", false, 20)]
-#endif
         static void MenuClicked()
         {
-            // UnityEditor.EditorApplication.isPlaying = true;
+            UnityEditor.EditorApplication.isPlaying = true;
             new GameObject("UnloadPrefabExample").AddComponent<UnloadPrefabExample>();
         }
-
+#endif
         IEnumerator Start()
         {
             //var uiRoot = Resources.Load<GameObject>("UIRoot");

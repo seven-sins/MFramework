@@ -7,12 +7,12 @@ namespace MFramework
     {
 #if UNITY_EDITOR
         [UnityEditor.MenuItem("MFramework/Example/10.框架示例", false, 10)]
-#endif
         private static void MenuClicked()
         {
-            // UnityEditor.EditorApplication.isPlaying = true;
+            UnityEditor.EditorApplication.isPlaying = true;
             new GameObject("MsgReceiverObj").AddComponent<FrameworkExample>();
         }
+#endif
         private void Awake()
         {
             UnRegister("DO");
