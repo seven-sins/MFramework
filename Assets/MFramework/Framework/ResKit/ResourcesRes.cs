@@ -29,7 +29,7 @@ namespace MFramework
         /// 异步加载
         /// </summary>
         /// <param name="onLoaded"></param>
-        public override void LoadAsync(Action<Res> onLoaded)
+        public override void LoadAsync()
         {
             State = ResState.Loading;
             ResourceRequest resRequest = Resources.LoadAsync(mAssetPath);
@@ -37,7 +37,7 @@ namespace MFramework
             {
                 Asset = resRequest.asset;
                 State = ResState.Loaded;
-                onLoaded(this);
+                // onLoaded(this);
             };
         }
 

@@ -52,20 +52,45 @@ namespace MFramework
 
             return assetBundle;
         }
+
+        private void LoadDependencyBundlesAsync(Action onAllLoaded)
+        {
+            string[] dependencyBundleNames = Manifest.GetDirectDependencies(mAssetPath.Substring(Application.streamingAssetsPath.Length + 1));
+            int loadedCount = 0;
+            if (dependencyBundleNames.Length == 0)
+            {
+                onAllLoaded();
+            }
+            foreach (string dependencyBundleName in dependencyBundleNames)
+            {
+                mResLoader.LoadAsync<AssetBundle>(Application.streamingAssetsPath + "/" + dependencyBundleName,
+                    dependenBundle =>
+                    {
+                        loadedCount++;
+                        if(loadedCount == dependencyBundleNames.Length)
+                        {
+                            onAllLoaded();
+                        }
+                    });
+            }
+        }
+
         /// <summary>
         /// 异步加载
         /// </summary>
         /// <param name="onLoaded"></param>
-        public override void LoadAsync(Action<Res> onLoaded)
+        public override void LoadAsync()
         {
             State = ResState.Loading;
-            AssetBundleCreateRequest assetBundleRequest = AssetBundle.LoadFromFileAsync(mAssetPath);
-            assetBundleRequest.completed += operation =>
+            LoadDependencyBundlesAsync(() =>
             {
-                assetBundle = assetBundleRequest.assetBundle;
-                State = ResState.Loaded;
-                onLoaded(this);
-            };
+                AssetBundleCreateRequest assetBundleRequest = AssetBundle.LoadFromFileAsync(mAssetPath);
+                assetBundleRequest.completed += operation =>
+                {
+                    assetBundle = assetBundleRequest.assetBundle;
+                    State = ResState.Loaded;
+                };
+            });
         }
 
         protected override void Release()

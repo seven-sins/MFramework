@@ -80,7 +80,12 @@
     <Compile Include="Assets\MFramework\Example\23.ResourcesManagerExample\ResourcesManagerExample.cs" />
     <Compile Include="Assets\MFramework\Example\24.AssetBundleExample\AssetBundleExample.cs" />
     <Compile Include="Assets\MFramework\Example\25.AssetBundleManifestExample\AssetBundleManifestExample.cs" />
+    <Compile Include="Assets\MFramework\Example\26.LoadAsyncTest\LoadAsyncTest.cs" />
+    <Compile Include="Assets\MFramework\Example\27.LoadAsyncTest\LoadAsyncTest2.cs" />
+    <Compile Include="Assets\MFramework\Example\28.LoadAsyncTest\LoadAsyncTest3.cs" />
+    <Compile Include="Assets\MFramework\Example\29.LoadDependencyAsyncTest\LoadDependencyAsyncTest.cs" />
     <Compile Include="Assets\MFramework\Example\3.ResolutionCheck\ResolutionCheckExample.cs" />
+    <Compile Include="Assets\MFramework\Example\30.LoadABAssetExample\LoadABAssetExample.cs" />
     <Compile Include="Assets\MFramework\Example\4.TransformSimplify\TransformSimplifyExample.cs" />
     <Compile Include="Assets\MFramework\Example\5.MathUtil\MathUtilExample.cs" />
     <Compile Include="Assets\MFramework\Example\6.GameObjectSimplify\GameObjectSimplifyExample.cs" />
@@ -96,6 +101,7 @@
     <Compile Include="Assets\MFramework\Framework\Manager\MainManager.cs" />
     <Compile Include="Assets\MFramework\Framework\MonoBehaviourSimplify.cs" />
     <Compile Include="Assets\MFramework\Framework\ResKit\AssetBundleRes.cs" />
+    <Compile Include="Assets\MFramework\Framework\ResKit\AssetRes.cs" />
     <Compile Include="Assets\MFramework\Framework\ResKit\Res.cs" />
     <Compile Include="Assets\MFramework\Framework\ResKit\ResLoader.cs" />
     <Compile Include="Assets\MFramework\Framework\ResKit\ResManager.cs" />
