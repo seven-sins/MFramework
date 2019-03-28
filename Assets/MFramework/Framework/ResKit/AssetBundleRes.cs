@@ -13,7 +13,7 @@ namespace MFramework
             {
                 if (!mManifest)
                 {
-                    AssetBundle mainBundle = AssetBundle.LoadFromFile(Application.streamingAssetsPath + "/StreamingAssets");
+                    AssetBundle mainBundle = AssetBundle.LoadFromFile(ResKitUtil.FullPathForAssetBundle(ResKitUtil.GetPlatformName()));
                     mManifest = mainBundle.LoadAsset<AssetBundleManifest>("AssetBundleManifest");
                 }
                 return mManifest;
@@ -26,10 +26,10 @@ namespace MFramework
         }
         // 加载资源路径
         private string mAssetPath;
-        public AssetBundleRes(string assetPath)
+        public AssetBundleRes(string assetName)
         {
-            mAssetPath = assetPath;
-            Name = assetPath;
+            mAssetPath = ResKitUtil.FullPathForAssetBundle(assetName);
+            Name = assetName;
             State = ResState.Waiting;
         }
 
@@ -42,10 +42,10 @@ namespace MFramework
         public override bool LoadSync()
         {
             State = ResState.Loading;
-            string[] dependencyBundleNames = Manifest.GetDirectDependencies(mAssetPath.Substring(Application.streamingAssetsPath.Length + 1));
+            string[] dependencyBundleNames = Manifest.GetDirectDependencies(Name);
             foreach(string dependencyBundleName in dependencyBundleNames)
             {
-                mResLoader.LoadSync<AssetBundle>(Application.streamingAssetsPath + "/" + dependencyBundleName);
+                mResLoader.LoadSync<AssetBundle>(dependencyBundleName);
             }
             assetBundle = AssetBundle.LoadFromFile(mAssetPath);
             State = ResState.Loaded;
@@ -55,7 +55,7 @@ namespace MFramework
 
         private void LoadDependencyBundlesAsync(Action onAllLoaded)
         {
-            string[] dependencyBundleNames = Manifest.GetDirectDependencies(mAssetPath.Substring(Application.streamingAssetsPath.Length + 1));
+            string[] dependencyBundleNames = Manifest.GetDirectDependencies(Name);
             int loadedCount = 0;
             if (dependencyBundleNames.Length == 0)
             {
@@ -63,7 +63,7 @@ namespace MFramework
             }
             foreach (string dependencyBundleName in dependencyBundleNames)
             {
-                mResLoader.LoadAsync<AssetBundle>(Application.streamingAssetsPath + "/" + dependencyBundleName,
+                mResLoader.LoadAsync<AssetBundle>(dependencyBundleName,
                     dependenBundle =>
                     {
                         loadedCount++;

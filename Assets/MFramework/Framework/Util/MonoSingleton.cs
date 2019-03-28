@@ -28,9 +28,11 @@ namespace MFramework
                         {
                             instanceObj = new GameObject(instanceName);
                         }
+
                         mInstance = instanceObj.AddComponent<T>();
                         // 保证实例不会被释放
                         DontDestroyOnLoad(instanceObj);
+
                         Debug.LogFormat("Add New Singleton {0} in Game!", instanceName);
                     }
                     else

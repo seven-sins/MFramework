@@ -37,7 +37,6 @@ namespace MFramework
             {
                 Asset = resRequest.asset;
                 State = ResState.Loaded;
-                // onLoaded(this);
             };
         }
 

@@ -13,13 +13,13 @@ namespace MFramework
             new GameObject("LoadABAssetExample").AddComponent<LoadABAssetExample>();
         }
 #endif
-        private ResLoader mResLoader = new ResLoader();
+        ResLoader mResLoader = new ResLoader();
         private void Start()
         {
-            Texture2D squareTexture = mResLoader.LoadSync<Texture2D>(Application.streamingAssetsPath + "/square", "Square");
+            Texture2D squareTexture = mResLoader.LoadSync<Texture2D>("square", "Square");
             Debug.Log(squareTexture.name);
 
-            mResLoader.LoadAsync<GameObject>(Application.streamingAssetsPath + "/red", "Red", gameObjectPrefab =>
+            mResLoader.LoadAsync<GameObject>("red", "Red", gameObjectPrefab =>
             {
                 Instantiate(gameObjectPrefab);
             });

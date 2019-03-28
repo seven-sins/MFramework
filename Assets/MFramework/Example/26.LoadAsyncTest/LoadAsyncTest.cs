@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace MFramework
 {
@@ -16,9 +15,9 @@ namespace MFramework
         ResLoader mResLoader = new ResLoader();
         private void Start()
         {
-            mResLoader.LoadAsync<AssetBundle>(Application.streamingAssetsPath + "/square", 
+            mResLoader.LoadAsync<AssetBundle>("square", 
                 squareTexture => { Debug.Log(squareTexture.name);});
-            mResLoader.LoadSync<AssetBundle>(Application.streamingAssetsPath + "/square");
+            mResLoader.LoadSync<AssetBundle>("square");
         }
     }
 

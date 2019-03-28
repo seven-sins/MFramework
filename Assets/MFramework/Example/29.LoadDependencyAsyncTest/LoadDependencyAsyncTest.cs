@@ -16,10 +16,9 @@ namespace MFramework
         ResLoader mResLoader = new ResLoader();
         private void Start()
         {
-            mResLoader.LoadAsync<AssetBundle>(Application.streamingAssetsPath + "/red", bundle =>
+            mResLoader.LoadAsync<AssetBundle>("red", bundle =>
             {
-                GameObject gameObject = bundle.LoadAsset<GameObject>("red");
-                Instantiate(gameObject);
+                Instantiate(bundle.LoadAsset<GameObject>("red"));
             });
         }
 

@@ -78,19 +78,7 @@ namespace MFramework
 
         private Res CreateRes(string assetName, string ownerBundle = null)
         {
-            Res res = null;
-            if(ownerBundle != null)
-            {
-                res = new AssetRes(assetName, ownerBundle);
-            }
-            else if (assetName.StartsWith("resources://"))
-            {
-                res = new ResourcesRes(assetName);
-            }
-            else
-            {
-                res = new AssetBundleRes(assetName);
-            }
+            Res res = ResFactory.Create(assetName, ownerBundle);
 
             ResManager.Instance.SharedLoadedRes.Add(res);
             this.AddRes2Record(res);
